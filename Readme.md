@@ -1,5 +1,7 @@
 # AI ENCODER
 This is a one-way encoder meant to only obscure text from AI chatbots while being human readable.  
+
+LATIN CHARACTERS ONLY
   
 Exe was made using pyinstaller `pip install pyinstaller`  
   
