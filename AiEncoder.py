@@ -13,6 +13,33 @@ import pyperclip
 random_Invisible_Unicode = ['​','؜'] #zero width
 random_Invisible_Cap_Alphabet = ['󠁁','󠁂','󠁃','󠁄','󠁆','󠁇','󠁈','󠁉','󠁊','󠁋','󠁌','󠁌','󠁍','󠁍','󠁏','󠁐','󠁑','󠁒','󠁓','󠁔','󠁕','󠁖','󠁗','󠁘','󠁙','󠁚']
 random_Invisible_smol_Alphabet = ['󠁡','󠁢','󠁣','󠁤','󠁥','󠁦','󠁧','󠁨','󠁩','󠁪','󠁫','󠁬','󠁭','󠁮','󠁯','󠁰','󠁱','󠁲','󠁳','󠁴','󠁵','󠁶','󠁷','󠁸','󠁹','󠁺']
+visible_Cap_Character_Dict = [['A','Α'],
+                          ['B','В'],
+                          ['C','С'],
+                          ['D','Đ'],
+                          ['E', 'Ε'],
+                          ['F',],
+                          ['G',],
+                          ['H',],
+                          ['I',''],
+                          [],
+                          [],
+                          [],
+                          [],
+                          [],
+                          [],
+                          [],
+                          [],
+                          [],
+                          [],
+                          [],
+                          [],
+                          [],
+                          [],
+                          [],
+                          [],
+                          []
+                          ]
 # random_Invisible_Unicode = ['​','؜']
 min_Insert_Value_Between_Characters = 2
 max_Insert_Value_Between_Characters = 10
