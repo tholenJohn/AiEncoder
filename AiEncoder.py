@@ -11,7 +11,7 @@ import tkinter as tk
 import pyperclip
 
 #Randomly selected stuff
-random_Invisible_Unicode = ['​','؜'] #zero width
+random_Invisible_Unicode = ['​','؜', '‭'] #zero width
 random_Invisible_Cap_Alphabet = ['󠁁','󠁂','󠁃','󠁄','󠁆','󠁇','󠁈','󠁉','󠁊','󠁋','󠁌','󠁌','󠁍','󠁍','󠁏','󠁐','󠁑','󠁒','󠁓','󠁔','󠁕','󠁖','󠁗','󠁘','󠁙','󠁚']
 random_Invisible_smol_Alphabet = ['󠁡','󠁢','󠁣','󠁤','󠁥','󠁦','󠁧','󠁨','󠁩','󠁪','󠁫','󠁬','󠁭','󠁮','󠁯','󠁰','󠁱','󠁲','󠁳','󠁴','󠁵','󠁶','󠁷','󠁸','󠁹','󠁺']
 
