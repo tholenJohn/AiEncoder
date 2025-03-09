@@ -16,58 +16,58 @@ random_Invisible_Cap_Alphabet = ['󠁁','󠁂','󠁃','󠁄','󠁆','󠁇','󠁈
 random_Invisible_smol_Alphabet = ['󠁡','󠁢','󠁣','󠁤','󠁥','󠁦','󠁧','󠁨','󠁩','󠁪','󠁫','󠁬','󠁭','󠁮','󠁯','󠁰','󠁱','󠁲','󠁳','󠁴','󠁵','󠁶','󠁷','󠁸','󠁹','󠁺']
 
 #visible to user
-visible_Cap_Character_Dict = {'A': 'Α',
-                              'B': 'В',
-                              'C': 'С',
-                              'D': 'Đ',
-                              'E': 'Ε',
-                              'F': 'Ḟ',
-                              'G': 'G', #normal latin character
-                              'H': 'Η',
-                              'I': 'Ι',
-                              'J': 'Ј',
-                              'K': 'Κ',
-                              'L': 'L', #normal latin character
-                              'M': 'Μ',
-                              'N': 'Ν',
-                              'O': 'Ο',
-                              'P': 'Ρ',
-                              'Q': 'Q', #normal latin character
-                              'R': 'Ɍ',
-                              'S': 'Ѕ',
-                              'T': 'Τ',
-                              'U': 'Ų',
-                              'V': 'Ѵ',
-                              'W': 'Ш',
-                              'X': 'Χ',
-                              'Y': 'Υ',
-                              'Z': 'Ζ'}
-visible_smol_Character_Dict = {'a':'ɑ',
-                               'b':'ƅ',
-                               'c':'с',
-                               'd':'ď',
-                               'e':'е',
-                               'f':'f', #normal latin character
-                               'g':'ɡ', 
-                               'h':'һ',
-                               'i':'ί',
-                               'j':'ϳ',
-                               'k':'ҟ',
-                               'l':'ḷ', 
-                               'm':'ՠ',
-                               'n':'п',
-                               'o':'ο',
-                               'p':'р',
-                               'q':'ɋ', 
-                               'r':'r', #normal latin character
-                               's':'ѕ',
-                               't':'t', #normal latin character
-                               'u':'џ',
-                               'v':'ν',
-                               'w':'ɯ',
-                               'x':'х',
-                               'y':'у',
-                               'z':'ẓ',
+visible_Cap_Character_Dict = {'A': ['Α'],
+                              'B': ['В'],
+                              'C': ['С'],
+                              'D': ['Đ'],
+                              'E': ['Ε'],
+                              'F': ['Ḟ'],
+                              'G': ['G'], #normal latin character
+                              'H': ['Η'],
+                              'I': ['Ι'],
+                              'J': ['Ј'],
+                              'K': ['Κ'],
+                              'L': ['L'], #normal latin character
+                              'M': ['Μ'],
+                              'N': ['Ν'],
+                              'O': ['Ο'],
+                              'P': ['Ρ'],
+                              'Q': ['Q'], #normal latin character
+                              'R': ['Ɍ'],
+                              'S': ['Ѕ'],
+                              'T': ['Τ'],
+                              'U': ['Ų'],
+                              'V': ['Ѵ'],
+                              'W': ['Ш'],
+                              'X': ['Χ'],
+                              'Y': ['Υ'],
+                              'Z': ['Ζ']}
+visible_smol_Character_Dict = {'a':['ɑ'],
+                               'b':['ƅ'],
+                               'c':['с'],
+                               'd':['ď'],
+                               'e':['е'],
+                               'f':['f'], #normal latin character
+                               'g':['ɡ'], 
+                               'h':['һ'],
+                               'i':['ί'],
+                               'j':['ϳ'],
+                               'k':['ҟ'],
+                               'l':['ḷ'], 
+                               'm':['ՠ'],
+                               'n':['п'],
+                               'o':['ο'],
+                               'p':['р'],
+                               'q':['ɋ'], 
+                               'r':['r'], #normal latin character
+                               's':['ѕ'],
+                               't':['t'], #normal latin character
+                               'u':['џ'],
+                               'v':['ν'],
+                               'w':['ɯ'],
+                               'x':['х'],
+                               'y':['у'],
+                               'z':['ẓ'],
                                }
 
 # how many of the random invisible characters added between each visible character. 
@@ -126,9 +126,11 @@ def encodeOutput():
         for i in range(random.randint(min_Insert_Value_Between_Characters,max_Insert_Value_Between_Characters)):
             encodedOutput += grabRandomFromList(current_List_List[random.randint(1,100) % len(current_List_List)])
         if character in visible_Cap_Character_Dict.keys():
-            encodedOutput += visible_Cap_Character_Dict[character]
+            value = visible_Cap_Character_Dict.get(character)
+            encodedOutput += value[random.randint(1,100)%len(value)]
         elif character in visible_smol_Character_Dict.keys():
-            encodedOutput += visible_smol_Character_Dict[character]
+            value = visible_smol_Character_Dict.get(character)
+            encodedOutput += value[random.randint(1,100)%len(value)]
         else:
             encodedOutput += character
     
