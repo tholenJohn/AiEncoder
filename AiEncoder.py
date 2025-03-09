@@ -40,7 +40,6 @@ visible_Cap_Character_Dict = [['A','Α'],
                           [],
                           []
                           ]
-# random_Invisible_Unicode = ['​','؜']
 min_Insert_Value_Between_Characters = 2
 max_Insert_Value_Between_Characters = 10
 current_List_List = [id(random_Invisible_Cap_Alphabet),
