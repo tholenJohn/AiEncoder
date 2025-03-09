@@ -121,7 +121,7 @@ def encodeOutput():
     textField.delete('1.0',tk.END)
     output.delete('1.0',tk.END)
     # entry.delete(0, tk.END)
-    encodedOutput = '‭'
+    encodedOutput = '‭' #need this character to force left justification because of some bug
     for character in entrystring:
         for i in range(random.randint(min_Insert_Value_Between_Characters,max_Insert_Value_Between_Characters)):
             encodedOutput += grabRandomFromList(current_List_List[random.randint(1,100) % len(current_List_List)])
