@@ -1,20 +1,18 @@
-# Developed in Python 3.8 but is compatable with later versions
-# Encode your text to send for your weekly 5 points
+"""
+Encode your text to send for your weekly 5 points
 
-# Simply write your 5 points out, copy and paste it into the text field and press the 'Encode Text' button.
-# Then just copy the newly encoded text and use that to send to OPM/OSD or to whoever. 
-# DON'T FORGET TO ENCRPYT AND NOT ALLOW FORWARDING AS WELL IN THE EMAIL.
-
-#The best type of compliance is malicious compliance
+Simply write your 5 points out, copy and paste it into the text field and press the 'Encode Text' button.
+Then just copy the newly encoded text and use that to send to OPM/OSD or to whoever. 
+DON'T FORGET TO ENCRPYT AND NOT ALLOW FORWARDING AS WELL IN THE EMAIL.
+The best type of compliance is malicious compliance
+"""
 import random
 import tkinter as tk
 import pyperclip
-
 #Randomly selected stuff
 random_Invisible_Unicode = ['​','؜', '‭'] #zero width
 random_Invisible_Cap_Alphabet = ['󠁁','󠁂','󠁃','󠁄','󠁆','󠁇','󠁈','󠁉','󠁊','󠁋','󠁌','󠁌','󠁍','󠁍','󠁏','󠁐','󠁑','󠁒','󠁓','󠁔','󠁕','󠁖','󠁗','󠁘','󠁙','󠁚']
 random_Invisible_smol_Alphabet = ['󠁡','󠁢','󠁣','󠁤','󠁥','󠁦','󠁧','󠁨','󠁩','󠁪','󠁫','󠁬','󠁭','󠁮','󠁯','󠁰','󠁱','󠁲','󠁳','󠁴','󠁵','󠁶','󠁷','󠁸','󠁹','󠁺']
-
 #visible to user
 visible_Cap_Character_Dict = {'A': ['Α'],
                               'B': ['В'],
